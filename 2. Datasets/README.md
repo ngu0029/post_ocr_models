@@ -5,7 +5,7 @@
 ### Tập dữ liệu văn bản OCR tiếng Việt
 - Tập dữ liệu văn bản OCR tiếng Việt là kết quả đầu ra của mô hình mã hóa giải mã dựa trên cơ chế attention (gọi là mô hình AED) với bộ mã hóa sử dụng mạng DenseNet và bộ giải mã Long Short-Term Memory (LSTM) được đề xuất bởi nhóm tác giả Anh Duc Le et al. [2] (**Tác giả Anh Duc Le cũng là một thành viên của đề tài**).
 - Đầu vào của mô hình AED là hình ảnh của các văn bản viết tay trực tuyến trong tập dữ liệu VNOnDB-Line của bộ cơ sở dữ liệu VNOnDB [[tải]](http://tc11.cvc.uab.es/datasets/HANDS-VNOnDB2018_1) [3], được sử dụng trong cuộc thi nhận dạng văn bản viết tay trực tuyến tiếng Việt [4]. Mô hình sử dụng bộ dữ liệu VNOnDB-Line với tập dữ liệu huấn luyện bao gồm 5662 dòng văn bản, trong khi tập dữ liệu đánh giá có 1634 dòng văn bản.
-- Sau đó, chúng tôi tiếp tục thực hiện canh hàng bằng tay cho các văn bản OCR tiếng Việt và các văn bản gôc đúng GT tương ứng (tham khảo hình bên dưới). Tập dữ liệu văn bản OCR tiếng Việt đã được canh hàng ở mức ký tự có thể tải [tại đây]().
+- Sau đó, chúng tôi tiếp tục thực hiện canh hàng bằng tay ở mức ký tự cho các văn bản OCR tiếng Việt và các văn bản gốc đúng GT tương ứng (tham khảo hình bên dưới). Tập dữ liệu văn bản OCR tiếng Việt đã được canh hàng có thể tải tại đây [[tập training]](https://drive.google.com/file/d/1RBg--_LDkEmM-5M2j81zgw5VQh8U5iKa/view?usp=sharing), [[tập validation]](https://drive.google.com/file/d/1l7JvSwaq0JhtODm8GYNTTT6prFUpjQ1_/view?usp=sharing), [[tập test]](https://drive.google.com/file/d/1Ui3Dk1blWOivkYJ7HkKOdV9H_NviBbF1/view?usp=sharing).
 
 
 
