@@ -4,6 +4,6 @@
 - Các phép chỉnh sửa mẫu ký tự bao gồm xóa, chèn và thay thế. Ví dụ: từ sửa lỗi “remembered” cho từ lỗi “reinemb.ered” chứa hai phép chỉnh sửa, phép xóa dấu chấm “.” và phép thay thế “in” → “m”.
 
 ### Tham khảo
-[1] Nguyen DQ, Le AD, Phan MN, Zelinka I. 2020. An In-depth Analysis of OCR Errors for Unconstrained Vietnamese Handwriting. The 7th International Conference on Future Data and Security Engineering (FDSE 2020). Lecture Notes in Computer Science series 12466, pp. 448–461. (**Cùng nhóm tác giả đề tài**)
+[1] **Nguyen DQ, Le AD, Phan MN, Zelinka I**. 2020. An In-depth Analysis of OCR Errors for Unconstrained Vietnamese Handwriting. The 7th International Conference on Future Data and Security Engineering (FDSE 2020). Lecture Notes in Computer Science series 12466, pp. 448–461. (**Cùng nhóm tác giả đề tài**)
 
 [2] Nguyen HTT, Jatowt A, Coustaty M, Nguyen VN, Doucet A. 2019. Deep Statistical Analysis of OCR Errors for Effective Post-OCR Processing. In: 2019 ACM/IEEE Joint Conf. on Digital Libraries (Champaign, IL, USA), pp. 29-38.
