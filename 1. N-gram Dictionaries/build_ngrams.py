@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@author: NQDUNG VLU
+@author: NQDUNG @ VLU
 """
 from string import punctuation
 from collections import Counter
