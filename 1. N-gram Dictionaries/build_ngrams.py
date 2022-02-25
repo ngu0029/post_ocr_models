@@ -6,15 +6,15 @@ from string import punctuation
 from collections import Counter
 import re, os
 
-punc_regex = "[%s]+" % re.escape(punctuation)
-
 data_directory_path = 'Kho ngu lieu 2 trieu am tiet da tach tu'
 full_data_directory_paths = [data_directory_path]
 
 def is_not_punctuation(token):
+    """ Check if token is not a punctuation string """
     return True if [c for c in token if c not in punctuation] else False
   
 def is_not_tag(token):
+    """ Check if token is not in tag form """
     return False if re.search(r'<([\w\W]+)>', token) else True
 
 def tokenization(text):
