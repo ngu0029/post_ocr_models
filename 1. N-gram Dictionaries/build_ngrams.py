@@ -18,7 +18,7 @@ def is_not_tag(token):
     return False if re.search(r'<([\w\W]+)>', token) else True
 
 def tokenization(text):
-    "List all the syllable tokens (consecutive letters) in a text."
+    """ List all the syllable tokens (consecutive letters) in a text. """
     tokens = text.split()
     syllables = []
     for token in tokens:
@@ -26,7 +26,7 @@ def tokenization(text):
     return [syllable for syllable in syllables if is_not_punctuation(syllable) and is_not_tag(syllable)] # get rid of punctuation and tag tokens
   
 def tokenization_keep_punc(text):
-    "Tokenize but still keep punctuation."
+    """ Tokenize but still keep punctuation. """
     tokens = text.split()
     syllables = []
     for token in tokens:
