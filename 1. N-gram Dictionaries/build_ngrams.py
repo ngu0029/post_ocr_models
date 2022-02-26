@@ -101,8 +101,9 @@ def build_ngrams():
   print("Build n-grams: Done...")
   return C_2w, C_3w
 
-# build unigram vocabulary. 
-unigram_dict = build_unigrams()
+if __name__ == '__main__':
+  # build unigram vocabulary. 
+  unigram_dict = build_unigrams()
 
-# build bigram and trigram dictionaries. 
-bigram_dict, trigram_dict = build_ngrams()
+  # build bigram and trigram dictionaries. 
+  bigram_dict, trigram_dict = build_ngrams()
