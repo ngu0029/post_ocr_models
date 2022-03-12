@@ -35,36 +35,35 @@ def tokenization_keep_punc(text):
 
 def build_unigrams():
   """ Build unigrams (single syllables) """
+  print("Build unigrams: Start...")
   C = Counter()
   for full_data_directory_path in full_data_directory_paths:
     for root_path, directories, files in os.walk(full_data_directory_path):
       for file in files:        
         file_path = root_path + "/" + file
-        txt = open(file_path).read()
+        txt = open(file_path, encoding='utf-8').read()
         SYLLABLES = tokenization(txt)
         # build unigram
         buf_syllables = Counter(SYLLABLES)
         for s in buf_syllables: 
           C[s] = C.get(s, 0) + buf_syllables[s]
           
-        #print("Processing " + file, ": Done...")
-        #txt.close()
         del buf_syllables
         del SYLLABLES
         del txt
-  
-  print("Build unigrams: Done...")
-  
+    
+  print("Build unigrams: Done!")
   return C
 
 def build_ngrams():
   """ Build bigrams and trigrams """
+  print("Build n-grams: Start...")
   C_2w, C_3w = Counter(), Counter()
   for full_data_directory_path in full_data_directory_paths:
     for root_path, directories, files in os.walk(full_data_directory_path):
       for file in files:        
         file_path = root_path + "/" + file
-        txt = open(file_path).read()
+        txt = open(file_path, encoding='utf-8').read()
         SYLLABLES = tokenization_keep_punc(txt) # tokenize but still keep punctuation
         if not SYLLABLES: continue # avoid empty files
           
@@ -93,12 +92,10 @@ def build_ngrams():
           biword = SYLLABLES[-2] + " " + SYLLABLES[-1] # last biword in file
           C_2w[biword] = C_2w.get(biword, 0) + 1
                  
-        #print("Processing " + file, ": Done...")
-        #txt.close()
         del SYLLABLES
         del txt
   
-  print("Build n-grams: Done...")
+  print("Build n-grams: Done!")
   return C_2w, C_3w
 
 if __name__ == '__main__':
