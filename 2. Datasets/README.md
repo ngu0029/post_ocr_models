@@ -13,7 +13,7 @@
 [1] Chiron G, Doucet A, Coustaty M, Moreux J. 2017. ICDAR2017 Competition on Post-OCR Text Correction. 14th IAPR International Conference
 on Document Analysis and Recognition (ICDAR) Kyoto, Japan 01:1423-1428, DOI 10.1109/ICDAR.2017.232
 
-[2] Le, A.D., Nguyen, H.T., Nakagawa, M. 2020. An End-to-End Recognition System for Unconstrained Vietnamese Handwriting. SN Computer Science 1(7). https://doi.org/10.1007/s42979-019-0001-4
+[2] **Le, A.D.**, Nguyen, H.T., Nakagawa, M. 2020. An End-to-End Recognition System for Unconstrained Vietnamese Handwriting. SN Computer Science 1(7). https://doi.org/10.1007/s42979-019-0001-4
 
 [3] Nguyen, H.T., Nguyen, C.T., Pham, B.T., Nakagawa, M. 2018. A database of unconstrained Vietnamese online handwriting and recognition experiments by recurrent neural networks. Pattern Recognition 78, 291–306. https://doi.org/10.1016/j.patcog.2018.01.013
 
