@@ -41,9 +41,9 @@ def move_begin_index_ahead(error_begin_index, reversed_ocr_output):
 def error_correction(filepath):
   """ Error correction phase """
   print("Error correction: Start...")
-  output_file = open(work_directory_path + "/Results/corrected_vn_words.json", "w", encoding='utf-8') # a fix: encoded in UTF-8 to support accents)
+  output_file = open(work_directory_path + "/Results/corrected_vn_words.json", "w", encoding='utf-8')
   output_file.write("{")
-  corrected_output_gt_file = open(work_directory_path + "/Results/test_output_gt_sentences_v2_corrected.txt", "w", encoding='utf-8') # a fix: encoded in UTF-8 to support accents)
+  corrected_output_gt_file = open(work_directory_path + "/Results/test_output_gt_sentences_v2_corrected.txt", "w", encoding='utf-8')
   
   f_sentence = open(filepath, encoding='utf-8').readlines()
   for i in range(len(f_sentence)):
@@ -116,7 +116,7 @@ def error_correction(filepath):
   output_file.seek(0, 2) # uses the end of the file as the reference point
   output_file.truncate(output_file.tell() - 1) # remove last commas mark ','
 
-  output_file = open(work_directory_path + "/Results/corrected_vn_words.json", "a") # opens the file for appending
+  output_file = open(work_directory_path + "/Results/corrected_vn_words.json", "a") # appending
   output_file.write("\n}")
   output_file.close()
   
