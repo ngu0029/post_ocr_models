@@ -116,7 +116,7 @@ def write_edit_patterns_to_file(edit_patterns):
 
   for edit_pattern in sorted(edit_patterns.items(), key=operator.itemgetter(1), reverse=True): # or key=lambda x: x[1] 
     output_file.write(edit_pattern[0] + "|" + str(edit_pattern[1]) + "\n")
-  output_file.close() # close file needed for best practice
+  output_file.close()
   
 def build_char_edit_tabs(train_fp='train_output_gt_sentences_v2_aligned.txt', \
                          val_fp = 'val_output_gt_sentences_v2_aligned.txt'):
